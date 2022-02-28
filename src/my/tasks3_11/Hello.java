@@ -3,7 +3,6 @@ package my.tasks3_11;
 public class Hello {
     public static void main(String[] args) {
 
-
         String b = "0x55";
         System.out.println("byte b = " + b + ";");
         String s = "0x55ff";
