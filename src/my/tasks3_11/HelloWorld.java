@@ -2,21 +2,23 @@ package my.tasks3_11;
 
 public class HelloWorld {
     public static void main(String[] args) {
+
         byte b = 0x55;
-        System.out.println("byte b = " + b + ";");
         short s = 0x55ff;
-        System.out.println("short s = " + s + ";");
         int i = 1000000;
-        System.out.println("int i = " + i + ";");
         long l = 0xffffffffL;
-        System.out.println("long l = " + l + ";");
         char c = 'a';
-        System.out.println("char c = " + c + ";");
         float f = .25f;
-        System.out.println("float f = " + f + ";");
         double d = .00001234;
-        System.out.println("double d = " + d + ";");
         boolean bool = true;
+
+        System.out.println("byte b = " + b + ";");
+        System.out.println("short s = " + s + ";");
+        System.out.println("int i = " + i + ";");
+        System.out.println("long l = " + l + ";");
+        System.out.println("char c = " + c + ";");
+        System.out.println("float f = " + f + ";");
+        System.out.println("double d = " + d + ";");
         System.out.println("boolean bool = " + bool + ";");
 
     }
