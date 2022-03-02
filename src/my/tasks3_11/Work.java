@@ -3,11 +3,8 @@ package my.tasks3_11;
 public class Work {
     public static void main(String[] args) {
 
-
         Boxes myBoxes = new Boxes();
         System.out.println("Результат: " + new Boxes().getRes1());
-
-
     }
 }
 class Boxes {
@@ -16,6 +13,7 @@ class Boxes {
     int res1 = (num1 + num2) + (num1 * num2);
 
     int getRes1() {
+
         return res1;
     }
 }
