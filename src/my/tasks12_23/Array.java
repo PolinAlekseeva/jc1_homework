@@ -16,6 +16,6 @@ public class Array {
         nums [8] = 65;
         nums [9] = 73;
 
-        System.out.println(nums[9]);
+        System.out.println(nums[nums.length - 1]);
     }
 }
