@@ -8,5 +8,4 @@ public class Main {
 
         System.out.println("The object time2 has " + time2.getSec() + " seconds.");
     }
-
 }
