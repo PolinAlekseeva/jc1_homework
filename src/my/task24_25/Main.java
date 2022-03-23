@@ -15,6 +15,8 @@ public class Main {
         else{
             System.out.println("The object1 is not equal to object2.");
         }
+        int res = time1.getTime() - time2.getSec();
+        System.out.println("The object 1 is for " + res + " seconds longer than the object 2.");
     }
 }
 

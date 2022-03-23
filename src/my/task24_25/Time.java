@@ -5,8 +5,11 @@ public class Time {
     int sec;
     int min;
     int hour;
+    int res;
+
 
     public Time(int sec) {
+        res = sec;
         this.sec = sec;
         System.out.println("Object1 has " + this.sec + " seconds");
 
@@ -31,5 +34,9 @@ public class Time {
         return this.hour * 3600 + this.min * 60 + this.sec;
 
     }
+    int getTime(){
+        return res;
+    }
+
 }
 
