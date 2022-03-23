@@ -1,4 +1,4 @@
-package my.task24_25;
+package my.task24_25.time24;
 
 public class Main {
     public static void main(String[] args) {
