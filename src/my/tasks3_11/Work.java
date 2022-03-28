@@ -4,15 +4,13 @@ public class Work {
     public static void main(String[] args) {
 
         Boxes myBoxes = new Boxes();
-        System.out.println("Результат: " + new Boxes().getRes1());
+        System.out.println("Результат: " + new Boxes().getRes1(5,10));
     }
 }
 class Boxes {
-    int num1 = 5;
-    int num2 = 10;
-    int res1 = (num1 + num2) + (num1 * num2);
 
-    int getRes1() {
+    int getRes1(int num1, int num2) {
+        int res1 = (num1 + num2) + (num1 * num2);
 
         return res1;
     }
