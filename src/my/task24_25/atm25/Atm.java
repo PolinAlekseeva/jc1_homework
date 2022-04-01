@@ -1,7 +1,5 @@
 package my.task24_25.atm25;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Atm {
     private int nominal20;
     private int nominal50;
