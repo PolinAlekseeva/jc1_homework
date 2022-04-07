@@ -1,8 +1,13 @@
 package my.tasks32;
 
-public class HomeTechnics {
+public abstract class HomeTechnics {
 
     String name;
+
+    abstract String getName();
+
+    abstract float getWeight();
+
 
     public static void main(String[] args) {
 
