@@ -1,6 +1,6 @@
 package my.task24_25.atm25;
 
-public class Atm {
+public class Atm{
     private int nominal20;
     private int nominal50;
     private int nominal100;
