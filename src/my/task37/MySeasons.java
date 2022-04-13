@@ -28,8 +28,8 @@ public class MySeasons {
         NOV(30, SeasonsOfYear.FALL),
         DEC(31, SeasonsOfYear.WINTER);
 
-        int i;
-        SeasonsOfYear season;
+        final int i;
+        final SeasonsOfYear season;
 
         SeasonsDays(int i, SeasonsOfYear season) {
             this.i = i;
