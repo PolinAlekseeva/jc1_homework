@@ -13,6 +13,7 @@ public enum Seasons {
     int countOfDays;
 
     public static void main(String[] args) {
+
         System.out.println(Arrays.toString(Seasons.values()) + " ");
     }
 }
