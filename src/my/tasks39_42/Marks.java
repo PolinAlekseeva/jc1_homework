@@ -1,7 +1,7 @@
 package my.tasks39_42;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.List;
 
 public class Marks {
@@ -16,13 +16,13 @@ public class Marks {
         badMarks.add(9);
         badMarks.add(10);
 
-        Iterator<Integer> marksIterator = badMarks.iterator();
-        while (marksIterator.hasNext()) {
+        ListIterator<Integer> marksListIterator = badMarks.listIterator();
+        while (marksListIterator.hasNext()) {
 
-            Integer nextInteger = marksIterator.next();
+            Integer nextInteger = marksListIterator.next();
 
             if (nextInteger.intValue()<=6){
-                marksIterator.remove();
+                marksListIterator.remove();
             }
         }
         System.out.println(badMarks.toString());
