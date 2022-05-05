@@ -7,6 +7,7 @@ public class Main {
 
        Atm atm = new Atm(25,30,10);
         System.out.println(atm.getAllBanknotes());
+        System.out.println("Please enter the needed sum: ");
 
 
 
