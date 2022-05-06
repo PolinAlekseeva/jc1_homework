@@ -1,6 +1,8 @@
 package my.task47;
 
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class TextFile {
@@ -37,6 +39,18 @@ public class TextFile {
                 e.printStackTrace();
             }
         }
+
+        int count = 0;
+        Pattern p = Pattern.compile("\\b");
+        Matcher m = p.matcher("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems." +
+                "People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music.");
+
+        while(m.find()) {
+
+            count++;
+        }
+        count/=2;
+        System.out.println("There are " + count + " words in this text.");
     }
 
 
