@@ -12,24 +12,27 @@ public class TextFile {
         BufferedReader br = null;
 
         try {
-        File file = new File("textFile.txt");
-        if(!file.exists())
-            file.createNewFile();
+            File file = new File("textFile.txt");
+            if (!file.exists())
+                file.createNewFile();
 
 
-        PrintWriter pw = new PrintWriter(file);
-        pw.println("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems.");
-       pw.println("People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music.");
+            PrintWriter pw = new PrintWriter(file);
+            pw.println("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems.");
+            pw.println("People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music.");
 
-       pw.close();
+            pw.close();
 
-       br = new BufferedReader(new FileReader("textFile.txt"));
-       String line;
-       while((line = br.readLine()) != null) {
-           System.out.println(line);
+            br = new BufferedReader(new FileReader("textFile.txt"));
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+                String[] words = line.split(" ");
+                System.out.println("There are " + words.length + " words in this text.");
+
+            }
 
 
-        }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -40,18 +43,17 @@ public class TextFile {
             }
         }
 
-        int count = 0;
-        Pattern p = Pattern.compile("\\b");
-        Matcher m = p.matcher("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems." +
-                "People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music.");
-
-        while(m.find()) {
-
-            count++;
-        }
-        count/=2;
-        System.out.println("There are " + count + " words in this text.");
+//        int count = 0;  //Это еще вариант подсчета слов в тексте
+//        Pattern p = Pattern.compile("\\b");
+//        Matcher m = p.matcher("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems." +
+//                "People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music.");
+//
+//        while(m.find()) {
+//
+//            count++;
+//        }
+//        count/=2;
+//        System.out.println("There are " + count + " words in this text.");
     }
-
 
 }
