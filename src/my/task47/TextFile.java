@@ -53,7 +53,7 @@ public class TextFile {
 //            count++;
 //        }
 //        count/=2;
-//        System.out.println("There are " + count + " words in this text.");
+//        System.out.println("There are " + count + " words in this text.");}
     }
 
 }
