@@ -18,8 +18,8 @@ public class TextFile {
 
 
             PrintWriter pw = new PrintWriter(file);
-            pw.println("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems.");
-            pw.println("People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music.");
+            pw.println("We see people in our country and in other lands and learn about their customs occupations, traditions, problems.");
+            pw.println("People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music!");
 
             pw.close();
 
@@ -29,9 +29,10 @@ public class TextFile {
                 System.out.println(line);
                 String[] words = line.split(" ");
                 System.out.println("There are " + words.length + " words in this text.");
+                String[] words2 = line.split("\\p{Punct}" );
+                System.out.println("There are " + words2.length + " punctuation symbols in this text");
 
             }
-
 
         } catch (IOException e) {
             e.printStackTrace();
