@@ -18,7 +18,7 @@ public class TextFile {
 
 
             PrintWriter pw = new PrintWriter(file);
-            pw.println("We see people in our country and in other lands and learn about their customs occupations, traditions, problems.");
+            pw.println("We see people in our country and in other lands and learn about their customs, occupations, traditions, problems.");
             pw.println("People used to have hobbies, to meet with friends, to go to the cinema or theatre, to read books, to listen to music!");
 
             pw.close();
