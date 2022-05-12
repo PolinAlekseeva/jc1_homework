@@ -16,18 +16,21 @@ public class FileWithNumbers {
 
             FileWriter fw = new FileWriter(f);
             fw.write("We read lesson 6, exercise 5.");
-            fw.write("Jack has to learn 9 words, 6 verbs, 5 adjectives.");
+            fw.write("Jack has to learn 9 words, 47 verbs, 5 adjectives.");
             fw.close();
 
             br = new BufferedReader(new FileReader("file.txt"));
             String line;
             while((line = br.readLine()) != null) {
                 System.out.println(line);
-                int count = 0;
-                for(int i =0; i< line.length(); i ++) {
-                    if(Character.isDigit(line.charAt(i))) count++;
-                }
-                System.out.println("There are " + count + " digits in the text");
+                String[] words = line.split("[0-9]+");
+                System.out.println("There are " + (words.length-1) + " digits in this text");
+
+//                int count = 0;
+//                for(int i =0; i< line.length(); i ++) {
+//                    if(Character.isDigit(line.charAt(i))) count++;
+//                }
+//                System.out.println("There are " + count + " digits in the text");
 
             }
 
