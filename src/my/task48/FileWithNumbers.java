@@ -26,15 +26,13 @@ public class FileWithNumbers {
                 String[] words = line.split("[0-9]+");
                 System.out.println("There are " + (words.length-1) + " digits in this text");
 
-//                int count = 0;
-//                for(int i =0; i< line.length(); i ++) {
-//                    if(Character.isDigit(line.charAt(i))) count++;
-//                }
-//                System.out.println("There are " + count + " digits in the text");
+
+                for(int i =0; i< line.length(); i ++) {
+                    if(Character.isDigit(line.charAt(i))) {
+                        System.out.print(line.charAt(i) + " ");}
+                }
 
             }
-
-
 
         } catch (IOException e) {
             e.printStackTrace();
